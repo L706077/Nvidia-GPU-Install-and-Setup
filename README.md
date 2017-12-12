@@ -33,13 +33,21 @@ $ sudo apt-get update
 $ sudo apt-get install cuda
 
 $ nano ~/.bashrc
- export CUDA_HOME=/usr/local/cuda-8.0
- export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
- export PATH=${CUDA_HOME}/bin:${PATH}
+ export CUDA_HOME=/usr/local/cuda-8.0 <br/>
+ export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH <br/>
+ export PATH=${CUDA_HOME}/bin:${PATH} <br/>
 
-add in the end, then enter "ctrl+x" to save
+add in the end, then enter "ctrl+x" to save <br/>
 
 $ source ~/.bashrc 
+
+then you can try key "nvcc -V" can see: <br/>
+
+nvcc: NVIDIA (R) Cuda compiler driver <br/>
+Copyright (c) 2005-2017 NVIDIA Corporation <br/>
+Built on Fri_Nov__3_21:07:56_CDT_2017 <br/>
+Cuda compilation tools, release 9.1, V9.1.85 <br/>
+
 
 ### if key "$ nvidia-smi" show no driver:
 $ sudo apt-get install cuda-drivers
