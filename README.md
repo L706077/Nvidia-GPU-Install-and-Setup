@@ -19,7 +19,7 @@ $ sudo update-pciids <br/>
 
 ## Step2
 ### install CUDA as following:
-
+- [CUDA Install Reference](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal)
 $ CUDA_REPO_PKG=cuda-repo-ubuntu1604_8.0.44-1_amd64.deb
 
 $ wget -O /tmp/${CUDA_REPO_PKG} http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/${CUDA_REPO_PKG}
