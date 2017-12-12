@@ -72,7 +72,7 @@ then you can see everything basic GPU information about your GPU card <br/>
 - [cuDNN Download ](https://developer.nvidia.com/rdp/cudnn-download)
 
 According your CUDA Version then choose ** cuDNN v7.0.5 Library for Linux ** to download
-
+```C++
 $ cd 下載
 
 $ tar xvzf cudnn-9.1-linux-x64-v7.tgz
@@ -82,7 +82,7 @@ $ sudo cp -P cuda/include/cudnn.h /usr/local/cuda-9.1/include
 $ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-9.1/lib64
 
 $ sudo chmod a+r /usr/local/cuda-9.1/include/cudnn.h /usr/local/cuda-9.1/lib64/libcudnn*  
-
+```
 
 
 
