@@ -116,3 +116,21 @@ Open Makefile.config to change:
 
 
 ```
+### add opencv dependency require in caffe "CMakeLists.txt" as follows:
+
+```C++
+
+set( OpenCV_DIR "/home/ubuntu/opencv-2.4.13/release/" ) ###
+find_package(OpenCV REQUIRED) ###
+
+```
+
+```C++
+$ cd caffe
+
+$ mkdir build
+
+$ cmake ..
+
+$ make all
+```
