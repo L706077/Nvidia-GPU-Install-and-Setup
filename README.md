@@ -95,6 +95,9 @@ $ sudo ln -s libcudnn.so.7 libcudnn.so
 
 
 ## Step5
+### install caffe
+- [Caffe](http://caffe.berkeleyvision.org/install_apt.html)
+
 ```C++
 
 $ git clone https://github.com/BVLC/caffe.git
