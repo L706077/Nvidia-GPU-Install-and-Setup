@@ -26,8 +26,6 @@ $ wget -O /tmp/${CUDA_REPO_PKG} http://developer.download.nvidia.com/compute/cud
 
 $ sudo dpkg -i /tmp/${CUDA_REPO_PKG} 
 
-$ rm -f /tmp/${CUDA_REPO_PKG}
-
 $ sudo apt-get update
 
 $ sudo apt-get install cuda
@@ -41,18 +39,29 @@ add in the end, then enter "ctrl+x" to save <br/>
 
 $ source ~/.bashrc 
 
-then you can try key "nvcc -V" can see: <br/>
+then you can try key **"nvcc -V"** can see: <br/>
 
 nvcc: NVIDIA (R) Cuda compiler driver <br/>
 Copyright (c) 2005-2017 NVIDIA Corporation <br/>
 Built on Fri_Nov__3_21:07:56_CDT_2017 <br/>
 Cuda compilation tools, release 9.1, V9.1.85 <br/>
 
+$ rm -f /tmp/${CUDA_REPO_PKG}
 
 ### if key "$ nvidia-smi" show no driver:
 $ sudo apt-get install cuda-drivers
 
 $ sudo reboot
+
+then you can try again key **"nvidia-smi"** <br/>
+
+## Step3
+### Run CUDA Sample Code:
+$ cd /usr/local/cuda-9.1/samples/1_Utilities/deviceQuery
+$ sudo make
+$./deviceQuery
+
+then you can see everything basic GPU information about your GPU card <br/>
 
 
 
