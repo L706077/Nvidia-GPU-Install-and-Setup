@@ -86,19 +86,24 @@ $ sudo chmod a+r /usr/local/cuda-9.1/include/cudnn.h /usr/local/cuda-9.1/lib64/l
 
 **ignore temporatory** <br/>
 ### create soft link:
-
+```C++
 $ sudo ln -s libcudnn.so.7.0.5 libcudnn.so.7
 
 $ sudo ln -s libcudnn.so.7 libcudnn.so
-
+```
 **ignore temporatory** <br/>
 
 
 ## Step5
+```C++
 
 $ git clone https://github.com/BVLC/caffe.git
+
+$ sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+
+$ sudo apt-get install --no-install-recommends libboost-all-dev
  
 $ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 
-
+```
