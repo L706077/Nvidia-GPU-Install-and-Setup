@@ -137,3 +137,19 @@ $ cmake ..
 
 $ make all
 ```
+
+
+## Step6
+### Install Digits
+
+1.
+- [BuildCaffe.md](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildCaffe.md)
+
+2.
+- [BuildDigits](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildDigits.md)
+
+
+
+
+
+
