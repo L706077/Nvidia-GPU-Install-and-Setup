@@ -5,7 +5,7 @@
 
 
 
-##Step1
+## Step1
 ### if GPU card be installed on Workstation 
 
 $ lspci | grep -i NVIDIA <br/>
@@ -16,3 +16,6 @@ $ sudo update-pciids <br/>
 
  than you can see : VGA compatible controller: NVIDIA Corporation GP102 [TITAN X] (rev a1) <br/>
  
+
+## Step2
+
