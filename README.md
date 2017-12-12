@@ -8,11 +8,11 @@
 ## Step1
 ### if GPU card be installed on Workstation: 
 ```C++
-$ lspci | grep -i NVIDIA <br/>
+$ lspci | grep -i NVIDIA
 ```
  if termainal show : VGA compatible controller: NVIDIA Corporation Device 1b00 (rev a1) <br/>
 ```C++
-$ sudo update-pciids <br/>
+$ sudo update-pciids
 ```
  then you can see : VGA compatible controller: NVIDIA Corporation GP102 [TITAN X] (rev a1) <br/>
  
@@ -32,9 +32,9 @@ $ sudo apt-get update
 $ sudo apt-get install cuda
 
 $ nano ~/.bashrc
- export CUDA_HOME=/usr/local/cuda-8.0 <br/>
- export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH <br/>
- export PATH=${CUDA_HOME}/bin:${PATH} <br/>
+ export CUDA_HOME=/usr/local/cuda-8.0
+ export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
+ export PATH=${CUDA_HOME}/bin:${PATH}
 ```
 add in the end, then enter "ctrl+x" to save <br/>
 ```C++
