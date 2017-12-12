@@ -84,11 +84,14 @@ $ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-9.1/lib64
 $ sudo chmod a+r /usr/local/cuda-9.1/include/cudnn.h /usr/local/cuda-9.1/lib64/libcudnn*  
 ```
 
+**ignore temporatory** <br/>
+### create soft link:
 
+$ sudo ln -s libcudnn.so.7.0.5 libcudnn.so.7
 
+$ sudo ln -s libcudnn.so.7 libcudnn.so
 
-
-
+**ignore temporatory** <br/>
 
 
 
