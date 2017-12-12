@@ -94,4 +94,11 @@ $ sudo ln -s libcudnn.so.7 libcudnn.so
 **ignore temporatory** <br/>
 
 
+## Step5
+
+$ git clone https://github.com/BVLC/caffe.git
+ 
+$ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
+
+
 
