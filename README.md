@@ -179,6 +179,9 @@ $ make pycaffe
 
 $ sudo gedit /etc/profile # 末尾添加： export PYTHONPATH = caffe目录下的python地址:$PYTHONPATH，用完整路径，不要用~
 
+for example:
+export PYTHONPATH=/home/ubuntu/caffe/python/:$PYTHONPATH
+
 $ source /etc/profile # 使之生效
 ```
 
