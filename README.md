@@ -77,7 +77,7 @@ then you can see everything basic GPU information about your GPU card <br/>
 ### Install cuDNN 5.1
 - [cuDNN Download ](https://developer.nvidia.com/rdp/cudnn-download)
 
-According your CUDA Version then choose ** cuDNN v5.1 Library for Linux ** to download
+According your CUDA Version then choose **cuDNN v5.1 Library for Linux** to download
 ```C++
 $ cd 下載
 
