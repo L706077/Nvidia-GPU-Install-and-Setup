@@ -24,7 +24,7 @@ $ sudo update-pciids
 
 **Using "cuda8.0" version for example:** 
 ```C++
-$ CUDA_REPO_PKG=cuda-repo-ubuntu1604_8.0.44-1_amd64.deb
+$ CUDA_REPO_PKG=cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
 
 $ wget -O /tmp/${CUDA_REPO_PKG} http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/${CUDA_REPO_PKG}
 
