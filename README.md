@@ -142,6 +142,8 @@ Open Makefile.config to change:
 # LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 ```
+<br/>
+
 ### add opencv dependency requires in caffe "CMakeLists.txt" file as follows:
 
 ```C++
@@ -150,6 +152,7 @@ set( OpenCV_DIR "/home/ubuntu/opencv-2.4.13/release/" ) ###
 find_package(OpenCV REQUIRED) ###
 
 ```
+<br/>
 
 ### create caffe thirdparty lib symbolic link: 
 ```C++
@@ -161,8 +164,9 @@ $ sudo ln -s libhdf5_serial.so.10.1.0 libhdf5_hl.so
 ```
 if you need to delete symbolic link:
 ```C++
-rm -rf /usr/lib/x86_64-linux-gnu/libhdf5_hl.so /usr/lib/x86_64-linux-gnu/libhdf5_serial_hl.so.10.1.0
-rm -rf /usr/lib/x86_64-linux-gnu/libhdf5_serial.so.10.1.0 /usr/lib/x86_64-linux-gnu/libhdf5.so
+$ rm -rf /usr/lib/x86_64-linux-gnu/libhdf5_hl.so /usr/lib/x86_64-linux-gnu/libhdf5_serial_hl.so.10.1.0
+
+$ rm -rf /usr/lib/x86_64-linux-gnu/libhdf5_serial.so.10.1.0 /usr/lib/x86_64-linux-gnu/libhdf5.so
 ```
 <br/>
 
@@ -177,6 +181,7 @@ $ make all
 
 $ make runtest
 ```
+<br/>
 
 ### 配置pycaffe
 
@@ -190,7 +195,7 @@ $ cd ~/caffe/build
 $ make pycaffe
 
 ```
-
+<br/>
 
 **ignore tmp**
 ```C++
@@ -202,6 +207,7 @@ export PYTHONPATH=/home/ubuntu/caffe/python/:$PYTHONPATH
 $ source /etc/profile # 使之生效
 ```
 **ignore tmp**
+<br/>
 
 ```C++
 $ nano ~/.bashrc
@@ -222,7 +228,7 @@ $ python
 >>>import caffe
 
 ```
-
+<br/>
 
 #### 使用MNIST数据集进行测试:
 ```C++
