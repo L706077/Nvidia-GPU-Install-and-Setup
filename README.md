@@ -62,7 +62,7 @@ then you can try again key **"nvidia-smi"** <br/>
 ## Step3
 ### Run CUDA Sample Code:
 ```C++
-$ cd /usr/local/cuda-9.1/samples/1_Utilities/deviceQuery
+$ cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery
 $ sudo make
 $./deviceQuery
 ```
