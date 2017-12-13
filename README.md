@@ -40,14 +40,17 @@ $ nano ~/.bashrc
 ```
 add in the end, then enter "ctrl+x" to save <br/>
 ```C++
-$ source ~/.bashrc 
+$ source ~/.bashrc
+
+$ sudo reboot
 ```
 then you can try key **"nvcc -V"** can see: <br/>
 
 nvcc: NVIDIA (R) Cuda compiler driver <br/>
-Copyright (c) 2005-2017 NVIDIA Corporation <br/>
-Built on Fri_Nov__3_21:07:56_CDT_2017 <br/>
-Cuda compilation tools, release 9.1, V9.1.85 <br/>
+Copyright (c) 2005-2016 NVIDIA Corporation <br/>
+Built on Tue_Jan_10_13:22:03_CST_2017 <br/>
+Cuda compilation tools, release 8.0, V8.0.61 <br/>
+
 ```C++
 $ rm -f /tmp/${CUDA_REPO_PKG}
 ```
