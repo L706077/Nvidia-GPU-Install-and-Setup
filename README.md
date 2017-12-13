@@ -74,7 +74,7 @@ then you can see everything basic GPU information about your GPU card <br/>
 <br/>
 
 ## Step3
-### Install cuDNN 5.1
+### Install cuDNN 5.1:
 - [cuDNN Download ](https://developer.nvidia.com/rdp/cudnn-download)
 
 According your CUDA Version then choose **cuDNN v5.1 Library for Linux** to download
@@ -109,7 +109,7 @@ $ sudo ln -s libcudnn.so.7 libcudnn.so
 <br/>
 
 ## Step4
-### install caffe
+### install caffe:
 - [Caffe](http://caffe.berkeleyvision.org/install_apt.html)
 
 ```C++
@@ -170,6 +170,7 @@ $ rm -rf /usr/lib/x86_64-linux-gnu/libhdf5_serial.so.10.1.0 /usr/lib/x86_64-linu
 ```
 <br/>
 
+### make caffe:
 ```C++
 $ cd caffe
 
@@ -183,7 +184,7 @@ $ make runtest
 ```
 <br/>
 
-### 配置pycaffe
+### 配置pycaffe:
 
 ```C++
 $ sudo apt-get install python-numpy python-scipy python-matplotlib python-sklearn python-skimage python-h5py python-protobuf python-leveldb python-networkx python-nose python-pandas python-gflags cython ipython
@@ -242,7 +243,7 @@ $ sh examples/mnist/train_lenet.sh
 <br/>
 
 ## Step5
-### Install Digits
+### Install Digits:
 
 1. - [BuildCaffe.md](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildCaffe.md)
 
