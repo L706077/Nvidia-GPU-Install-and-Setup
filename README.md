@@ -136,8 +136,8 @@ $ cp Makefile.config.example Makefile.config
 
 Open Makefile.config to change:
 
-# USE_CUDNN := 1 -> USE_CUDNN := 1
-# CUDA_DIR := /usr/local/cuda ->  CUDA_DIR := /usr/local/cuda-8.0
+# USE_CUDNN := 1   ---->   USE_CUDNN := 1
+# CUDA_DIR := /usr/local/cuda   ---->   CUDA_DIR := /usr/local/cuda-8.0
 # INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
 # LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
 
