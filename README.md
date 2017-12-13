@@ -130,12 +130,14 @@ $ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; don
 
 $ sudo apt-get update
 
-
 $ cp Makefile.config.example Makefile.config
 
 Open Makefile.config to change:
-# USE_CUDNN := 1 -> USE_CUDNN := 1
 
+# USE_CUDNN := 1 -> USE_CUDNN := 1
+# CUDA_DIR := /usr/local/cuda ->  CUDA_DIR := /usr/local/cuda-8.0
+#  INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
+#  LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 ```
 ### add opencv dependency require in caffe "CMakeLists.txt" as follows:
@@ -171,6 +173,17 @@ $ sudo gedit /etc/profile # 末尾添加： export PYTHONPATH = caffe目录下�
 
 $ source /etc/profile # 使之生效
 ```
+
+```C++
+$ make pycaffe
+
+$ sudo gedit /etc/profile # 末尾添加： export PYTHONPATH = caffe目录下的python地址:$PYTHONPATH，用完整路径，不要用~
+
+$ source /etc/profile # 使之生效
+```
+
+
+
 
 #### 使用MNIST数据集进行测试:
 ```C++
