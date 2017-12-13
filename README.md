@@ -5,6 +5,8 @@
 
 <br/>
 
+### brfore startup GPU you need to install Opencv2.4.13
+
 ## Step1
 ### if GPU card be installed on Workstation: 
 ```C++
