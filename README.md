@@ -89,6 +89,7 @@ $ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64
 
 $ sudo chmod a+r /usr/local/cuda-8.0/include/cudnn.h /usr/local/cuda-8.0/lib64/libcudnn*  
 ```
+<br/>
 
 **ignore temporatory** <br/>
 ### create soft link:
@@ -149,6 +150,21 @@ set( OpenCV_DIR "/home/ubuntu/opencv-2.4.13/release/" ) ###
 find_package(OpenCV REQUIRED) ###
 
 ```
+
+### create caffe thirdparty lib symbolic link: 
+```C++
+$ cd /usr/lib/x86_64-linux-gnu
+
+$ sudo ln -s libhdf5_serial.so.10.1.0 libhdf5.so
+
+$ sudo ln -s libhdf5_serial.so.10.1.0 libhdf5_hl.so
+```
+if you need to delete symbolic link:
+```C++
+rm -rf /usr/lib/x86_64-linux-gnu/libhdf5_hl.so /usr/lib/x86_64-linux-gnu/libhdf5_serial_hl.so.10.1.0
+rm -rf /usr/lib/x86_64-linux-gnu/libhdf5_serial.so.10.1.0 /usr/lib/x86_64-linux-gnu/libhdf5.so
+```
+<br/>
 
 ```C++
 $ cd caffe
