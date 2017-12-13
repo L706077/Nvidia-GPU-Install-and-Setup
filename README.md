@@ -197,6 +197,7 @@ $ make pycaffe
 ```
 <br/>
 
+
 **ignore tmp**
 ```C++
 $ sudo gedit /etc/profile # 末尾添加： export PYTHONPATH = caffe目录下的python地址:$PYTHONPATH，用完整路径，不要用~
@@ -208,6 +209,7 @@ $ source /etc/profile # 使之生效
 ```
 **ignore tmp**
 <br/>
+
 
 ```C++
 $ nano ~/.bashrc
