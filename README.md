@@ -62,7 +62,7 @@ $ sudo reboot
 ```
 then you can try again key **"nvidia-smi"** <br/>
 
-## Step3
+
 ### Run CUDA Sample Code:
 ```C++
 $ cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery
@@ -72,7 +72,7 @@ $./deviceQuery
 then you can see everything basic GPU information about your GPU card <br/>
 
 
-## Step4
+## Step3
 ### Install cuDNN 5.1
 - [cuDNN Download ](https://developer.nvidia.com/rdp/cudnn-download)
 
@@ -106,7 +106,7 @@ $ sudo ln -s libcudnn.so.7 libcudnn.so
 **ignore temporatory** <br/>
 
 
-## Step5
+## Step4
 ### install caffe
 - [Caffe](http://caffe.berkeleyvision.org/install_apt.html)
 
@@ -215,7 +215,7 @@ $ sh examples/mnist/train_lenet.sh
 ```
 
 
-## Step6
+## Step5
 ### Install Digits
 
 1.
