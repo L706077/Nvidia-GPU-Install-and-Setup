@@ -166,17 +166,15 @@ $ make all
 $ sudo apt-get install python-numpy python-scipy python-matplotlib python-sklearn python-skimage python-h5py python-protobuf python-leveldb python-networkx python-nose python-pandas python-gflags cython ipython
 
 $ sudo apt-get install protobuf-c-compiler protobuf-compiler
-$ cd ~/caffe
+
+$ cd ~/caffe/build
 
 $ make pycaffe
-$ sudo gedit /etc/profile # 末尾添加： export PYTHONPATH = caffe目录下的python地址:$PYTHONPATH，用完整路径，不要用~
 
-$ source /etc/profile # 使之生效
 ```
 
 ```C++
-$ make pycaffe
-
+### ignore tmp
 $ sudo gedit /etc/profile # 末尾添加： export PYTHONPATH = caffe目录下的python地址:$PYTHONPATH，用完整路径，不要用~
 
 for example:
@@ -185,7 +183,24 @@ export PYTHONPATH=/home/ubuntu/caffe/python/:$PYTHONPATH
 $ source /etc/profile # 使之生效
 ```
 
+```C++
+$ nano ~/.bashrc
+export PYTHONPATH=/home/ubuntu/caffe/build/python/:$PYTHONPATH
 
+$ source ~/.bashrc
+
+$ cd caffe
+
+$ make distribute
+
+```
+```C++
+### test caffe in python
+
+$ python
+>>>import caffe
+
+```C++
 
 
 #### 使用MNIST数据集进行测试:
