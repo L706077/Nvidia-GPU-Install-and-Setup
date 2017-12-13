@@ -124,6 +124,13 @@ $ sudo apt-get install libopenblas-dev
  
 $ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
+$ cd caffe/python/
+
+$ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
+
+$ sudo apt-get update
+
+
 $ cp Makefile.config.example Makefile.config
 
 Open Makefile.config to change:
@@ -148,6 +155,29 @@ $ mkdir build
 $ cmake ..
 
 $ make all
+```
+
+### Make pycaffe
+
+#### 配置pycaffe
+```C++
+$ sudo apt-get install python-numpy python-scipy python-matplotlib python-sklearn python-skimage python-h5py python-protobuf python-leveldb python-networkx python-nose python-pandas python-gflags cython ipython
+
+$ sudo apt-get install protobuf-c-compiler protobuf-compiler
+$ cd ~/caffe
+
+$ make pycaffe
+$ sudo gedit /etc/profile # 末尾添加： export PYTHONPATH = caffe目录下的python地址:$PYTHONPATH，用完整路径，不要用~
+
+$ source /etc/profile # 使之生效
+```
+
+#### 使用MNIST数据集进行测试:
+```C++
+$ cd caffe
+$ sh data/mnist/get_mnist.sh
+$ sh examples/mnist/create_mnist.sh
+$ sh examples/mnist/train_lenet.sh
 ```
 
 
