@@ -207,9 +207,9 @@ export PYTHONPATH=/home/ubuntu/caffe/python/:$PYTHONPATH
 
 $ source /etc/profile # 使之生效
 ```
-**ignore tmp**
+**ignore tmp**<br/>
 <br/>
-
+<br/>
 
 ```C++
 $ nano ~/.bashrc
@@ -223,12 +223,12 @@ $ cd caffe
 $ make distribute
 
 ```
-```C++
-### test caffe in python
+<br/>
 
+### test caffe in python
+```C++
 $ python
 >>>import caffe
-
 ```
 <br/>
 
