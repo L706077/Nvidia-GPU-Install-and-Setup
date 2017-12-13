@@ -73,25 +73,32 @@ then you can see everything basic GPU information about your GPU card <br/>
 
 
 ## Step4
-### Install cuDNN 7.0
+### Install cuDNN 5.1
 - [cuDNN Download ](https://developer.nvidia.com/rdp/cudnn-download)
 
-According your CUDA Version then choose ** cuDNN v7.0.5 Library for Linux ** to download
+According your CUDA Version then choose ** cuDNN v5.1 Library for Linux ** to download
 ```C++
 $ cd 下載
 
-$ tar xvzf cudnn-9.1-linux-x64-v7.tgz
+$ tar xvzf cudnn-8.0-linux-x64-v5.1.tgz
 
-$ sudo cp -P cuda/include/cudnn.h /usr/local/cuda-9.1/include 
+$ sudo cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include 
 
-$ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-9.1/lib64
+$ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64
 
-$ sudo chmod a+r /usr/local/cuda-9.1/include/cudnn.h /usr/local/cuda-9.1/lib64/libcudnn*  
+$ sudo chmod a+r /usr/local/cuda-8.0/include/cudnn.h /usr/local/cuda-8.0/lib64/libcudnn*  
 ```
 
 **ignore temporatory** <br/>
 ### create soft link:
 ```C++
+////=========cudnn5.1=========
+$ sudo ln -s libcudnn.so.5.1.10 libcudnn.so.5
+
+$ sudo ln -s libcudnn.so.5 libcudnn.so
+
+////=========cudnn7.0=========
+
 $ sudo ln -s libcudnn.so.7.0.5 libcudnn.so.7
 
 $ sudo ln -s libcudnn.so.7 libcudnn.so
