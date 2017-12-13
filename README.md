@@ -175,16 +175,17 @@ $ make pycaffe
 
 ```
 
+
+**ignore tmp**
 ```C++
-### ignore tmp
 $ sudo gedit /etc/profile # 末尾添加： export PYTHONPATH = caffe目录下的python地址:$PYTHONPATH，用完整路径，不要用~
 
 for example:
 export PYTHONPATH=/home/ubuntu/caffe/python/:$PYTHONPATH
 
 $ source /etc/profile # 使之生效
-### ignore tmp
 ```
+**ignore tmp**
 
 ```C++
 $ nano ~/.bashrc
@@ -219,11 +220,9 @@ $ sh examples/mnist/train_lenet.sh
 ## Step5
 ### Install Digits
 
-1.
-- [BuildCaffe.md](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildCaffe.md)
+1. - [BuildCaffe.md](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildCaffe.md)
 
-2.
-- [BuildDigits](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildDigits.md)
+2. - [BuildDigits](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildDigits.md)
 
 ```C++
 $ DIGITS_ROOT=~/digits
