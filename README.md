@@ -136,11 +136,11 @@ Open Makefile.config to change:
 
 # USE_CUDNN := 1 -> USE_CUDNN := 1
 # CUDA_DIR := /usr/local/cuda ->  CUDA_DIR := /usr/local/cuda-8.0
-#  INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
-#  LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
+# INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
+# LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 ```
-### add opencv dependency require in caffe "CMakeLists.txt" as follows:
+### add opencv dependency requires in caffe "CMakeLists.txt" file as follows:
 
 ```C++
 
@@ -157,11 +157,12 @@ $ mkdir build
 $ cmake ..
 
 $ make all
+
+$ make runtest
 ```
 
-### Make pycaffe
+### 配置pycaffe
 
-#### 配置pycaffe
 ```C++
 $ sudo apt-get install python-numpy python-scipy python-matplotlib python-sklearn python-skimage python-h5py python-protobuf python-leveldb python-networkx python-nose python-pandas python-gflags cython ipython
 
@@ -181,11 +182,13 @@ for example:
 export PYTHONPATH=/home/ubuntu/caffe/python/:$PYTHONPATH
 
 $ source /etc/profile # 使之生效
+### ignore tmp
 ```
 
 ```C++
 $ nano ~/.bashrc
 export PYTHONPATH=/home/ubuntu/caffe/build/python/:$PYTHONPATH
+
 
 $ source ~/.bashrc
 
@@ -200,7 +203,7 @@ $ make distribute
 $ python
 >>>import caffe
 
-```C++
+```
 
 
 #### 使用MNIST数据集进行测试:
@@ -221,7 +224,22 @@ $ sh examples/mnist/train_lenet.sh
 2.
 - [BuildDigits](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildDigits.md)
 
+```C++
+$ DIGITS_ROOT=~/digits
 
+$ git clone https://github.com/NVIDIA/DIGITS.git $DIGITS_ROOT
+
+$ sudo pip install -r $DIGITS_ROOT/requirements.txt
+
+$ sudo pip install -e $DIGITS_ROOT
+
+$cd digits
+
+$./digits-devserver
+
+Starts a server at http://localhost:5000/
+
+```
 
 
 
