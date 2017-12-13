@@ -11,6 +11,7 @@
 $ lspci | grep -i NVIDIA
 ```
  if termainal show : VGA compatible controller: NVIDIA Corporation Device 1b00 (rev a1) <br/>
+ you can try sa following: <br/>
 ```C++
 $ sudo update-pciids
 ```
