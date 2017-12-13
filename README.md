@@ -3,7 +3,7 @@
 - [ 1 ](https://qiita.com/shouta-dev/items/428af46b8a61622e25b2)[TitanX Stepup and Issue]
 - [ 2 ](http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/) [CUDA Version]
 
-
+<br/>
 
 ## Step1
 ### if GPU card be installed on Workstation: 
@@ -16,7 +16,7 @@ $ lspci | grep -i NVIDIA
 $ sudo update-pciids
 ```
  then you can see : VGA compatible controller: NVIDIA Corporation GP102 [TITAN X] (rev a1) <br/>
- 
+ <br/>
 
 ## Step2
 ### install CUDA as following:
@@ -71,7 +71,7 @@ $ sudo make
 $./deviceQuery
 ```
 then you can see everything basic GPU information about your GPU card <br/>
-
+<br/>
 
 ## Step3
 ### Install cuDNN 5.1
@@ -105,7 +105,7 @@ $ sudo ln -s libcudnn.so.7.0.5 libcudnn.so.7
 $ sudo ln -s libcudnn.so.7 libcudnn.so
 ```
 **ignore temporatory** <br/>
-
+<br/>
 
 ## Step4
 ### install caffe
@@ -214,7 +214,7 @@ $ sh data/mnist/get_mnist.sh
 $ sh examples/mnist/create_mnist.sh
 $ sh examples/mnist/train_lenet.sh
 ```
-
+<br/>
 
 ## Step5
 ### Install Digits
