@@ -84,6 +84,7 @@ According your CUDA Version then choose **cuDNN v5.1 Library for Linux** to down
 $ cd 下載
 
 $ tar xvzf cudnn-8.0-linux-x64-v5.1.tgz
+$ tar xvzf cudnn-8.0-linux-x64-v6.0.tgz
 
 $ sudo cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include 
 
