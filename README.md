@@ -114,7 +114,7 @@ $ sudo ln -s libcudnn.so.7 libcudnn.so
 ## Step4
 ### install caffe:
 - [Caffe](http://caffe.berkeleyvision.org/install_apt.html)
-
+- [BVLC/Caffe Installation Guide](https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide)
 ```C++
 
 $ git clone https://github.com/BVLC/caffe.git
