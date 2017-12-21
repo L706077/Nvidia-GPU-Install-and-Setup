@@ -303,7 +303,29 @@ $./digits-devserver
 Starts a server at http://localhost:5000/
 
 ```
+<br/>
 
+If show **A valid Caffe installation was not found on your system. Use the envvar CAFFE_ROOT to indicate a valid installation.**
 
-
-
+### These instructions are for bash
+```C++
+$ echo $SHELL
+/bin/bash
+```
+### Check the current value of your envvar
+```C++
+$ echo $CAFFE_ROOT
+```
+### Add the envvar to ~/.profile so it will load automatically when you login
+```C++
+$ echo "export CAFFE_ROOT=/home/username/caffe/" >> ~/.profile
+```
+### Load the new configuration
+```C++
+$ source ~/.profile
+```
+### Check the new envvar value
+```C++
+$ echo $CAFFE_ROOT
+/home/username/caffe/
+```
