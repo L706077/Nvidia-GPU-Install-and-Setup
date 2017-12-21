@@ -147,6 +147,28 @@ Open Makefile.config to change:
 ```
 <br/>
 
+---
+
+### The build process will fail in Ubuntu 16.04. Edit the Makefile with an editor such as
+```C++
+$ nano ./Makefile
+```
+**and replace this line:**
+```C++
+ NVCCFLAGS += -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+```
+**with the following line:*
+```C++
+NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+```
+**Also, open the file CMakeLists.txt and add the following line:**
+```C++
+# ---[ Includes
+set(${CMAKE_CXX_FLAGS} "-D_FORCE_INLINES ${CMAKE_CXX_FLAGS}")
+```
+**(See the discussion at: https://github.com/BVLC/caffe/issues/4046)**
+<br/>
+
 ### add opencv dependency requires in caffe "CMakeLists.txt" file as follows:
 
 ```C++
