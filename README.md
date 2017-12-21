@@ -219,7 +219,6 @@ $ source /etc/profile # 使之生效
 $ nano ~/.bashrc
 export PYTHONPATH=/home/ubuntu/caffe/build/python/:$PYTHONPATH
 
-
 $ source ~/.bashrc
 
 $ cd caffe
@@ -233,6 +232,20 @@ $ make distribute
 ```C++
 $ python
 >>>import caffe
+```
+**If show:**
+```C++
+>>> import caffe
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named caffe
+```
+**then**
+```C++
+$ nano ~/.bashrc
+export PYTHONPATH=/home/ubuntu/caffe/distribute/python/:$PYTHONPATH
+
+$ source ~/.bashrc
 ```
 <br/>
 
