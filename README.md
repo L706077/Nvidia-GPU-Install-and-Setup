@@ -34,7 +34,7 @@ $ sudo dpkg -i /tmp/${CUDA_REPO_PKG}
 
 $ sudo apt-get update
 
-$ sudo apt-get install cuda-8-0
+$ sudo apt-get install cuda-8.0
 
 $ nano ~/.bashrc
  export CUDA_HOME=/usr/local/cuda-8.0
