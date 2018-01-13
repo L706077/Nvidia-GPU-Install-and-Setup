@@ -75,6 +75,24 @@ $./deviceQuery
 then you can see everything basic GPU information about your GPU card <br/>
 <br/>
 
+---
+
+### If you meet login loop problem, you can key 'Ctrl + Alt + F1' to terminal mode than:
+```C++
+$ nvidia-smi
+```
+<br/>
+
+**if show no drivers, then you can try as follow cammand:**
+```C++
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo ubuntu-drivers autoinstall
+```
+<br/>
+
+---
+
 ## Step3
 ### Install cuDNN 5.1:
 - [cuDNN Download ](https://developer.nvidia.com/rdp/cudnn-download)
