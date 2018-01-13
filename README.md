@@ -47,6 +47,14 @@ $ source ~/.bashrc
 
 $ sudo reboot
 ```
+<br/>
+
+than update cuda driver:
+```C++
+$ sudo ubuntu-drivers autoinstall
+```
+<br/>
+
 then you can try key **"nvcc -V"** can see: <br/>
 
 nvcc: NVIDIA (R) Cuda compiler driver <br/>
