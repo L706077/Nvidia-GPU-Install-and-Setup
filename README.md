@@ -34,7 +34,7 @@ $ sudo dpkg -i /tmp/${CUDA_REPO_PKG}
 
 $ sudo apt-get update
 
-$ sudo apt-get install cuda-8.0
+$ sudo apt-get install cuda-8-0
 
 $ nano ~/.bashrc
  export CUDA_HOME=/usr/local/cuda-8.0
@@ -129,6 +129,16 @@ $ sudo apt-get install libopenblas-dev
  
 $ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
+$ sudo apt-get install -y python-pip
+//=== python2.7 ===
+$ sudo apt-get install -y python-dev
+
+$ sudo apt-get install -y python-numpy python-scipy
+//=== python3.5 ===
+$ sudo apt-get install -y python3-dev
+
+$ sudo apt-get install -y python3-numpy python3-scipy
+//=================
 $ cd caffe/python/
 
 $ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
@@ -312,18 +322,22 @@ If show **A valid Caffe installation was not found on your system. Use the envva
 $ echo $SHELL
 /bin/bash
 ```
+
 ### Check the current value of your envvar
 ```C++
 $ echo $CAFFE_ROOT
 ```
+
 ### Add the envvar to ~/.profile so it will load automatically when you login
 ```C++
 $ echo "export CAFFE_ROOT=/home/username/caffe/" >> ~/.profile
 ```
+
 ### Load the new configuration
 ```C++
 $ source ~/.profile
 ```
+
 ### Check the new envvar value
 ```C++
 $ echo $CAFFE_ROOT
