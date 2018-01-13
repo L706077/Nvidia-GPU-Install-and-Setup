@@ -23,6 +23,7 @@ $ sudo update-pciids
 ## Step2
 ### install CUDA as following:
 - [CUDA Toolkit Download](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal) <br/>
+- [CUDA Install Guide Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup)
 
 **Using "cuda8.0" version for example:** 
 ```C++
