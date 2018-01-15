@@ -3,7 +3,7 @@
 - [the lasterst install reference:Ubuntu1604+CUDA9.0+Cudnn7.5+Caffe+digits](http://blog.csdn.net/linyu2016/article/details/78903243)
 - [ 1 ](https://qiita.com/shouta-dev/items/428af46b8a61622e25b2)[TitanX Stepup and Issue]
 - [ 2 ](http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/) [CUDA Version]
-
+- [CUDA-9.0](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal)
 <br/>
 
 ### brfore startup GPU you need to install Opencv2.4.13
