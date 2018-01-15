@@ -1,5 +1,6 @@
 # Nvidia-GPU-Install-and-Setup
 
+- [the lasterst install reference:Ubuntu1604+CUDA9.0+Cudnn7.5+Caffe+digits](http://blog.csdn.net/linyu2016/article/details/78903243)
 - [ 1 ](https://qiita.com/shouta-dev/items/428af46b8a61622e25b2)[TitanX Stepup and Issue]
 - [ 2 ](http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/) [CUDA Version]
 
