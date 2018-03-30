@@ -181,7 +181,8 @@ Open Makefile.config to change:
 # CUDA_DIR := /usr/local/cuda   ---->   CUDA_DIR := /usr/local/cuda-8.0
 # INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
 # LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
-# PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include  
+# PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include
+attantion to check /usr/lib/python2.7  or  /usr/local/lib/python2.7
 ```
 <br/>
 
