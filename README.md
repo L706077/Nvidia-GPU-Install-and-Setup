@@ -235,6 +235,7 @@ $ rm -rf /usr/lib/x86_64-linux-gnu/libhdf5_serial.so.10.1.0 /usr/lib/x86_64-linu
 <br/>
 
 ### make caffe:
+**the new version method**
 ```C++
 $ cd caffe
 
@@ -247,6 +248,12 @@ $ make all
 $ make runtest
 ```
 <br/>
+
+**then you can try as following cammand**
+```C++
+$ python
+>>> import caffe
+```
 
 ### 配置pycaffe:
 
