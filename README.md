@@ -139,7 +139,22 @@ $ sudo ln -s libcudnn.so.7 libcudnn.so
 **ignore temporatory** <br/>
 <br/>
 
+
 ## Step4
+### insatll NCCL
+**If you have more than two GPU**
+```C++
+$ git clone https://github.com/NVIDIA/nccl.git
+
+$ cd nccl
+
+$ sudo make install -j4
+
+```
+<br/>
+
+
+## Step5
 ### install caffe:
 - [Caffe](http://caffe.berkeleyvision.org/install_apt.html)
 - [BVLC/Caffe Installation Guide](https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide)
@@ -326,7 +341,7 @@ $ sh examples/mnist/train_lenet.sh
 ```
 <br/>
 
-## Step5
+## Step6
 ### Install Digits:
 
 1. - [BuildCaffe.md](https://github.com/NVIDIA/DIGITS/blob/master/docs/BuildCaffe.md)
