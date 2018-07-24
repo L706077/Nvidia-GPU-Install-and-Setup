@@ -123,7 +123,25 @@ $ sudo ubuntu-drivers autoinstall
 
 ---
 
-## Step3
+## Step3.0
+### Install TensorRT3
+- [TensorRT Download](https://developer.nvidia.com/nvidia-tensorrt-download)
+
+```C++
+$ sudo dpkg -i nv-tensorrt-repo-ubuntu1604-ga-cuda9.0-trt3.0.4-20180208_1-1_amd64.deb
+
+$ sudo apt-get update
+
+$ sudo apt-get install tensorrt
+
+$ dpkg -l | grep TensorRT
+
+```
+
+---
+
+
+## Step3.1
 ### Install cuDNN 5.1:
 - [cuDNN Download ](https://developer.nvidia.com/rdp/cudnn-download)
 
@@ -284,11 +302,21 @@ $ make runtest
 ```
 <br/>
 
+```C++
+$ nano ~/.bashrc
+export PYTHONPATH=/home/ubuntu/caffe/python/:$PYTHONPATH
+
+$ source ~/.bashrc
+```
+<br/>
+
 **then you can try as following cammand**
 ```C++
 $ python
 >>> import caffe
 ```
+
+---
 
 ### 配置pycaffe:
 
@@ -320,7 +348,7 @@ $ source /etc/profile # 使之生效
 
 ```C++
 $ nano ~/.bashrc
-export PYTHONPATH=/home/ubuntu/caffe/build/python/:$PYTHONPATH
+export PYTHONPATH=/home/ubuntu/caffe/python/:$PYTHONPATH
 
 $ source ~/.bashrc
 
