@@ -43,6 +43,26 @@ $ nano ~/.bashrc
  export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
  export PATH=${CUDA_HOME}/bin:${PATH}
 ```
+**Using "cuda9.0" version for example:** 
+- [cuda download](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal)
+
+```C++
+$ sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
+
+sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub
+$ sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
+
+$ sudo apt-get update
+
+$ sudo apt-get install cuda
+
+$ nano ~/.bashrc
+ export CUDA_HOME=/usr/local/cuda-9.0
+ export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
+ export PATH=${CUDA_HOME}/bin:${PATH}
+
+```
+
 add in the end, then enter "ctrl+x" to save <br/>
 ```C++
 $ source ~/.bashrc
