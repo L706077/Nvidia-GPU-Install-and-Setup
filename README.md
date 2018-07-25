@@ -385,8 +385,14 @@ $ source ~/.bashrc
 $ cd caffe
 $ sh data/mnist/get_mnist.sh
 $ sh examples/mnist/create_mnist.sh
-$ sudo sh examples/mnist/train_lenet.sh
+$ sh examples/mnist/train_lenet.sh
 ```
+#### 如果出現Check failed : status == CUDNN_STATUS_SUCCESS (4 vs. 0) CUDNN_STATUS_INTERNAL_ERROR 
+```C++
+$ su
+進到root權限，再重複執行
+```
+
 <br/>
 
 ## Step6
@@ -442,3 +448,10 @@ $ source ~/.profile
 $ echo $CAFFE_ROOT
 /home/username/caffe/
 ```
+#### 如果出現Check failed : status == CUDNN_STATUS_SUCCESS (4 vs. 0) CUDNN_STATUS_INTERNAL_ERROR 
+```C++
+$ su
+進到root權限，再重複執行
+```
+
+
